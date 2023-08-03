@@ -8,7 +8,7 @@ router.route("/").put(async (req, res) => {
 
   let task = await Task.findOne({ _id: req.body.id });
 
-  console.log(task, "oen");
+  // console.log(task, "oen");
 
   if (task) {
     task.status = req.body.status;
